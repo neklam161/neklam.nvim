@@ -1,0 +1,23 @@
+-- lua/plugins/init.lua
+return {
+    require("plugins.alpha"),
+    require("plugins.trouble"),
+    require("plugins.comment"),
+    require("plugins.harpoon"),
+    require("plugins.lsp"),
+    require("plugins.lualine"),
+    require("plugins.nvim-cmp"),
+    require("plugins.nvim-tree"),
+    require("plugins.rose-pine"),
+    require("plugins.telescope"),
+    require("plugins.treesitter"),
+    require("plugins.project"),
+    require("plugins.markdownpreview"),
+    require("plugins.nvim-autopairs"),
+    require("plugins.gitsigns"),
+    require("plugins.conform"),
+    require("plugins.dap"),
+    require("plugins.venv-selector"),
+    require("plugins.which-key"),
+    require("plugins.diffview"),
+}

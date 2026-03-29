@@ -1,0 +1,48 @@
+# =============================================================================
+# .gitignore — neklam/nvim
+# =============================================================================
+
+# ── lazy.nvim plugin store ───────────────────────────────────────────────────
+# lazy.nvim downloads plugins here at runtime. Never commit these —
+# they are re-downloaded automatically on any new machine.
+/lazy/
+
+# ── Mason binaries ───────────────────────────────────────────────────────────
+# Mason installs LSP servers, formatters, and linters here.
+# These are large platform-specific binaries; Mason reinstalls them on demand.
+/mason/
+
+# ── lazy-lock.json ───────────────────────────────────────────────────────────
+# UNCOMMENT the line below ONLY if you do NOT want to pin plugin versions.
+# By default we commit lazy-lock.json so that all machines use identical
+# plugin versions. This is the recommended approach for a personal config.
+# /lazy-lock.json
+
+# ── Machine-specific / personal overrides ────────────────────────────────────
+# Create this file locally for anything that shouldn't be public:
+# workspace paths, API keys, machine-specific LSP settings, etc.
+lua/plugins/local.lua
+
+# ── Neovim runtime state ─────────────────────────────────────────────────────
+# These are generated at runtime and vary per machine.
+/swap/
+/backup/
+/undo/
+/log/
+/view/
+
+# ── Neovim shada (shared data) ───────────────────────────────────────────────
+# Search history, marks, registers — personal and machine-specific.
+*.shada
+*.shada.tmp.*
+
+# ── OS noise ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor noise ─────────────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+\#*\#
+\n# Vim native packages (not managed by lazy.nvim)\npack/
